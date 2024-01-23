@@ -1,3 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+class A
+{
+public:
+  virtual void f() { cout << "A\n"; }
+};
+
+class B : public A
+{
+public:
+  virtual void f() { cout << "B\n"; }
+};
+
+class C : public B
+{
+public:
+  virtual void f() { cout << "C\n"; }
+};
+
 int main(void)
 {
     // define instances for 3 classes

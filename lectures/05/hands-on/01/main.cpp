@@ -1,6 +1,6 @@
 #include "Ghost.h"
 
-void f(Ghost a, const Ghost &b)
+void f(Ghost a, Ghost &b)
 {
     a.spook();
     b.spook();

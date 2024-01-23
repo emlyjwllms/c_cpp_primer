@@ -17,15 +17,27 @@ void print(std::array<int, 4> v, const char msg[])
 void set_values_1(std::array<int, 4> v)
 {
     // TODO: implement the function here
+    for (size_t i = 0; i < v.size(); ++i) {
+	v[i] = 1;
+    }
 }
 
 // TODO: write another function set_values_2 that behaves the same as
 // set_values_1 and takes a reference to an std::array instead
+void set_values_2(std::array<int, 4> &v)
+{
+    for (size_t i = 0; i < v.size(); ++i) {
+	v[i] = 1;
+    }
+}
+
 
 int main(void)
 {
     // 1.
     // TODO: define a std::array here
+
+    std::array<int, 4> a = {0};
 
     print(a, "After initialization");
 
